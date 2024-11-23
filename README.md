@@ -53,5 +53,19 @@ After signup you can use this end point.
 
  send your product _id in params to delete product (Admin)
 
+* Third Order
+
+1-http://localhost:9000/api/order/createOrder
+
+create new order
+
+2-http://localhost:9000/api/order/getOrder/:id
+
+send your Order _id in params to get this order only
+
+2-http://localhost:9000/api/order/deleteOrder/:id
+
+send your Order _id in params to delete order
+
 
 ****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****\*\*****/
