@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 const userRouter = require('./Router/user');
 const productRouter = require('./Router/product');
+const Order = require("./Router/order");
 app.use(bodyParser.json());
 
 const uri= "mongodb+srv://Abdo:mage2024@cluster0.wrgsn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
@@ -27,4 +28,5 @@ app.get('/', (req, res) => {
 });
 app.use('/', userRouter);
 app.use('/',productRouter);
+app.use('/',Order);
 app.listen(9000)
